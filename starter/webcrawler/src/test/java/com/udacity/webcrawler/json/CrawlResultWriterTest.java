@@ -31,6 +31,7 @@ public final class CrawlResultWriterTest {
         .that(stringWriter.isClosed())
         .isFalse();
     String written = stringWriter.toString();
+    System.out.println("Written: " + written);
 
     // The purpose of all the wildcard matchers (".*") is to make sure we allow the JSON output to
     // contain extra whitespace where it does not matter.
